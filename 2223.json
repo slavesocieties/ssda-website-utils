@@ -1,0 +1,66 @@
+{
+"@context": "http://iiif.io/api/presentation/2/context.json",
+"@type": "sc:Manifest",
+"@id": "https://danielgenkins.com/manifest/2223.json",
+"label": "Test Volume",
+"attribution": "Slave Societies Digital Archive",
+"logo": "https://danielgenkins.com/ssda_logo.jpg",
+"sequences": [
+{
+"@type": "sc:Sequence",
+"@id": "https://danielgenkins.com/sequence/2223.json",
+"canvases": [
+{
+"@type": "sc:Canvas",
+"@id": "https://danielgenkins.com/canvas/2223-1001.json",
+"label": "1",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"motivation": "sc:painting",
+"on": "https://danielgenkins.com/canvas/2223-1001.json",
+"resource": {
+"@type": "dctypes:Image",
+"@id": "http://localhost:8182/iiif/2/Brazil%2FMinas_Gerais%2FNova_Lima%2FNossa_Senhora_do_Pilar%2F2223%2FJPG%2F1001.JPG/full/2736,/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "http://localhost:8182/iiif/2/Brazil%2FMinas_Gerais%2FNova_Lima%2FNossa_Senhora_do_Pilar%2F2223%2FJPG%2F1001.JPG",
+"@context": "http://iiif.io/api/image/2/context.json",
+"profile": "http://iiif.io/api/image/2/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://danielgenkins.com/canvas/2223-1002.json",
+"label": "2",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"motivation": "sc:painting",
+"on": "https://danielgenkins.com/canvas/2223-1002.json",
+"resource": {
+"@type": "dctypes:Image",
+"@id": "http://localhost:8182/iiif/2/Brazil%2FMinas_Gerais%2FNova_Lima%2FNossa_Senhora_do_Pilar%2F2223%2FJPG%2F1002.JPG/full/2736,/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "http://localhost:8182/iiif/2/Brazil%2FMinas_Gerais%2FNova_Lima%2FNossa_Senhora_do_Pilar%2F2223%2FJPG%2F1002.JPG",
+"@context": "http://iiif.io/api/image/2/context.json",
+"profile": "http://iiif.io/api/image/2/level2.json"
+}
+}
+}
+]
+}
+]
+}
+]
+}
