@@ -8,10 +8,11 @@ import boto3
 import pandas as pd
 import os
 from PIL import Image
+import json
 
 # Cell
 
-def scrape_bucket(bucket_name):
+def scrape_bucket(bucket_name, prefix=None):
     s3_resource = boto3.resource('s3')
     s3_client = boto3.client('s3')
     bucket = s3_resource.Bucket(bucket_name)
@@ -19,7 +20,7 @@ def scrape_bucket(bucket_name):
     volume_ids = []
     titles = []
     volume_roots = []
-    image_counts = []#
+    image_counts = []
     has_jpg = []
     has_tif = []
     has_other = []
@@ -30,34 +31,40 @@ def scrape_bucket(bucket_name):
 
     folders = ["jpg", "tif", "metadata"]
 
-    for obj in bucket.objects.all():
-        if (len(obj.key.split('/')) >= 5) and (obj.key.split('/')[4] not in volume_ids):
-            volume_ids.append(obj.key.split('/')[4])
-            volume_root = obj.key[:obj.key.rfind('/')]
+    for obj in bucket.objects.filter(Prefix = prefix):
+        if (len(obj.key.split('/')) >= 4) and (obj.key.split('/')[3].isdigit()) and (obj.key.split('/')[3] != '') and (obj.key.split('/')[3] not in volume_ids):
+            volume_ids.append(obj.key.split('/')[3])
+            volume_root = obj.key[:obj.key.find('/', obj.key.find(obj.key.split('/')[3]))]
             volume_roots.append(volume_root)
             has_metadata.append(False)
             has_pdf.append(False)
             has_jpg.append(False)
             has_tif.append(False)
             has_other.append(False)
-            other.append([])
+            other.append(None)
             for volume_obj in bucket.objects.filter(Prefix = volume_root):
                 if "DC.xml" in volume_obj.key:
                     has_metadata[-1] = True
                     s3_client.download_file(bucket.name, volume_obj.key, "temp.xml")
                     vol_dict = ssda_volume_xml_to_dict("temp.xml", volume_root)
                     volume_metadata.append(vol_dict)
-                    titles.append(vol_dict["title"])
+                    if "title" in vol_dict:
+                        titles.append(vol_dict["title"])
+                    else:
+                        titles.append("no title")
                     os.remove("temp.xml")
                 elif "pdf" in volume_obj.key.lower():
                     has_pdf[-1] = True
-                elif (has_jpg[-1] == False) and (volume_obj.key.lower().split('/')[5] == "jpg"):
+                elif (has_jpg[-1] == False) and (volume_obj.key.lower().split('/')[4] == "jpg"):
                     has_jpg[-1] = True
-                elif (has_tif[-1] == False) and (volume_obj.key.lower().split('/')[5] == "tif"):
+                elif (has_tif[-1] == False) and (volume_obj.key.lower().split('/')[4] == "tif"):
                     has_tif[-1] = True
-                elif (len(volume_obj.key.split('/')) > 6) and (volume_obj.key.lower().split('/')[5] not in folders):
+                elif (len(volume_obj.key.split('/')) > 5) and (volume_obj.key.lower().split('/')[4] not in folders) and ((other[-1] == None) or (volume_obj.key.lower().split('/')[4] not in other[-1])):
                     has_other[-1] = True
-                    other[-1].append(volume_obj.key.lower().split('/')[5])
+                    if other[-1] == None:
+                        other[-1] = volume_obj.key.lower().split('/')[4]
+                    else:
+                        other[-1] = other[-1] + '|' + volume_obj.key.lower().split('/')[4]
 
             image_metadata = []
             prod_imgs = None
@@ -70,9 +77,14 @@ def scrape_bucket(bucket_name):
                 volume_metadata[-1]["images"] = []
                 image_counts.append(0)
             else:
+                bad_images = 0
                 for image_obj in bucket.objects.filter(Prefix = volume_root + '/' + prod_imgs.upper()):
                     if ('.' + prod_imgs) in image_obj.key.lower():
                         file_name = image_obj.key[image_obj.key.rfind('/') + 1:image_obj.key.rfind('.')]
+                        if not file_name.isdigit():
+                            print("found bad image file name at " + image_obj.key)
+                            bad_images += 1
+                            continue
                         extension = image_obj.key[image_obj.key.rfind('.') + 1:]
                         temp_path = file_name + '.' + extension
                         s3_client.download_file(bucket.name, image_obj.key, temp_path)
@@ -83,10 +95,87 @@ def scrape_bucket(bucket_name):
                         image = {"file_name": int(file_name), "extension": extension, "height": height, "width": width}
                         image_metadata.append(image)
                 volume_metadata[-1]["images"] = image_metadata
-                image_counts.append(len(image_metadata))
+                image_counts.append(len(image_metadata) + bad_images)
+
+            print("Completed " + titles[-1])
+        elif (len(obj.key.split('/')) >= 5) and (not obj.key.split('/')[3].isdigit()) and (obj.key.split('/')[4] != '') and (obj.key.split('/')[4] not in volume_ids):
+            volume_ids.append(obj.key.split('/')[4])
+            volume_root = obj.key[:obj.key.find('/', obj.key.find(obj.key.split('/')[4]))]
+            volume_roots.append(volume_root)
+            has_metadata.append(False)
+            has_pdf.append(False)
+            has_jpg.append(False)
+            has_tif.append(False)
+            has_other.append(False)
+            other.append(None)
+            for volume_obj in bucket.objects.filter(Prefix = volume_root):
+                if "DC.xml" in volume_obj.key:
+                    has_metadata[-1] = True
+                    s3_client.download_file(bucket.name, volume_obj.key, "temp.xml")
+                    vol_dict = ssda_volume_xml_to_dict("temp.xml", volume_root)
+                    volume_metadata.append(vol_dict)
+                    if ("title" in vol_dict) and (vol_dict["title"] != None):
+                        titles.append(vol_dict["title"])
+                    else:
+                        titles.append("no title")
+                    os.remove("temp.xml")
+                elif "pdf" in volume_obj.key.lower():
+                    has_pdf[-1] = True
+                elif (has_jpg[-1] == False) and (volume_obj.key.lower().split('/')[5] == "jpg"):
+                    has_jpg[-1] = True
+                elif (has_tif[-1] == False) and (volume_obj.key.lower().split('/')[5] == "tif"):
+                    has_tif[-1] = True
+                elif (len(volume_obj.key.split('/')) > 6) and (volume_obj.key.lower().split('/')[5] not in folders) and ((other[-1] == None) or (volume_obj.key.lower().split('/')[5] not in other[-1])):
+                    has_other[-1] = True
+                    if other[-1] == None:
+                        other[-1] = volume_obj.key.lower().split('/')[5]
+                    else:
+                        other[-1] = other[-1] + '|' + volume_obj.key.lower().split('/')[5]
 
             if has_metadata[-1] == False:
                 titles.append("no title")
+                print("Failed to find metadata for " + volume_root)
+
+            image_metadata = []
+            prod_imgs = None
+            if has_jpg[-1]:
+                prod_imgs = "jpg"
+            elif has_tif[-1]:
+                prod_imgs = "tif"
+
+            if prod_imgs == None:
+                volume_metadata[-1]["images"] = []
+                image_counts.append(0)
+            else:
+                bad_images = 0
+                for image_obj in bucket.objects.filter(Prefix = volume_root + '/' + prod_imgs.upper()):
+                    if ('.' + prod_imgs) in image_obj.key.lower():
+                        file_name = image_obj.key[image_obj.key.rfind('/') + 1:image_obj.key.rfind('.')]
+                        if not file_name.isdigit():
+                            print("found incorrect image file name at " + image_obj.key)
+                            bad_images += 1
+                            continue
+                        extension = image_obj.key[image_obj.key.rfind('.') + 1:]
+                        temp_path = file_name + '.' + extension
+                        s3_client.download_file(bucket.name, image_obj.key, temp_path)
+                        try:
+                            im = Image.open(temp_path)
+                            width, height = im.size
+                            im.close()
+                            image = {"file_name": int(file_name), "extension": extension, "height": height, "width": width}
+                            image_metadata.append(image)
+                        except:
+                            print("found bad image file at " + image_obj.key)
+                            bad_images += 1
+                        os.remove(temp_path)
+                volume_metadata[-1]["images"] = image_metadata
+                image_counts.append(len(image_metadata) + bad_images)
+
+            try:
+                print("Completed " + titles[-1])
+            except:
+                print("Completed")
+                print(titles[-1])
 
     volumes_dict = {"id": volume_ids, "title": titles, "images": image_counts, "s3 root": volume_roots, "metadata": has_metadata, "has pdf": has_pdf, "has jpg": has_jpg, "has tif": has_tif, "has other": has_other, "other": other}
     volumes_df = pd.DataFrame.from_dict(volumes_dict)
@@ -102,8 +191,12 @@ def ssda_volume_xml_to_dict(volume_xml, s3_path):
     volume_dict = {}
     volume_dict["s3_path"] = s3_path
     for item in root:
+        if "{http://purl.org/dc/elements/1.1/}" in item.tag:
+            item.tag = item.tag[item.tag.find('}') + 1:]
         if item.text == None:
-            volume_dict[item.tag] = None
+            if item.tag not in volume_dict:
+                volume_dict[item.tag] = None
+            continue
         if item.text[0] == ' ':
             item.text = item.text[1:]
         if item.tag == "subject":
@@ -126,7 +219,7 @@ def ssda_volume_xml_to_dict(volume_xml, s3_path):
         elif item.tag == "identifier":
             volume_dict["identifier"] = item.text[item.text.find(':') + 1:]
         elif item.tag == "coverage":
-            if ('.' in item.text) and (',' in item.text):
+            if ('.' in item.text) and (',' in item.text) and ("Archives" not in item.text):
                 if "coverage" in volume_dict:
                     volume_dict["coverage"]["coords"] = item.text
                 else:
@@ -147,17 +240,37 @@ def ssda_volume_xml_to_dict(volume_xml, s3_path):
                 volume_dict["coverage"] = {"institution": item.text}
         elif ((item.tag == "type") and (item.text == "Text")) or (item.tag == "rights"):
             continue
+        elif (item.tag == "creator") and (';' in item.text):
+            creators = item.text.split(';')
+            for creator in creators:
+                if (len(creator) > 1) and (creator[0] == ' '):
+                    creator = creator[1:]
+                if "creator" in volume_dict:
+                    volume_dict["creator"].append(creator)
+                else:
+                    volume_dict["creator"] = [creator]
+        elif (item.tag == "language") and (';' in item.text):
+            languages = item.text.split(';')
+            for language in languages:
+                if (len(language) > 1) and (language[0] == ' '):
+                    language = language[1:]
+                if "language" in volume_dict:
+                    volume_dict["language"].append(language)
+                else:
+                    volume_dict["language"] = [language]
         else:
             if item.tag in volume_dict:
                 volume_dict[item.tag].append(item.text)
             else:
                 volume_dict[item.tag] = [item.text]
 
-        if "coverage" not in volume_dict:
-            volume_dict["coverage"] = {}
-            if "country" not in volume_dict["coverage"]:
-                volume_dict["coverage"]["country"] = volume_dict["s3_path"].split('/')[0].replace('_', ' ')
-                volume_dict["coverage"]["state"] = volume_dict["s3_path"].split('/')[1].replace('_', ' ')
-                volume_dict["coverage"]["city"] = volume_dict["s3_path"].split('/')[2].replace('_', ' ')
+    if "coverage" not in volume_dict:
+        volume_dict["coverage"] = {}
+        volume_dict["coverage"]["country"] = volume_dict["s3_path"].split('/')[0].replace('_', ' ')
+        volume_dict["coverage"]["state"] = volume_dict["s3_path"].split('/')[1].replace('_', ' ')
+        volume_dict["coverage"]["city"] = volume_dict["s3_path"].split('/')[2].replace('_', ' ')
+        volume_dict["coverage"]["institution"] = volume_dict["s3_path"].split('/')[3].replace('_', ' ')
+    elif "institution" not in volume_dict["coverage"]:
+        volume_dict["coverage"]["institution"] = volume_dict["s3_path"].split('/')[3].replace('_', ' ')
 
     return volume_dict
