@@ -4,7 +4,7 @@ __all__ = ['build_volume_manifest', 'write_server']
 
 # Cell
 
-def build_volume_manifest(volume_id, volume_title, volume_geography, image_details, manifest_server=None, image_server=None, default_server=None, output_dir_prefix=None):
+def build_volume_manifest(volume_info, manifest_server=None, image_server=None, default_server=None, output_dir_prefix=None):
     '''
     Builds a IIIF manifest for an SSDA volume based on specified metadata.
         volume_id: unique ID for specified volume
@@ -16,20 +16,12 @@ def build_volume_manifest(volume_id, volume_title, volume_geography, image_detai
         returns: path to a json file containing a valid IIIF manifest for the volume
     '''
     if default_server == None:
-        default_server = "http://localhost:3000/"
+        default_server = "https://images.slavesocieties.org/"
 
     if output_dir_prefix != None:
-        volume_json_path = output_dir_prefix + '\\' + str(volume_id) + ".json"
+        volume_json_path = output_dir_prefix + '\\' + str(volume_info["identifier"]) + ".json"
     else:
-        volume_json_path = str(volume_id) + ".json"
-
-    #cantaloupe can't handle utf-8 encoded characters apparently
-    #chars = ["á", "é", "í", "ñ", "ó", "ú"]
-    #subs = ["%E1", "%E9", "%ED", "%F1", "%F3", "%FA"]
-    #for key in volume_geography:
-        #for char in volume_geography[key]:
-            #if char in chars:
-                #volume_geography[key] = volume_geography[key].replace(char, subs[chars.index(char)])
+        volume_json_path = str(volume_info["identifier"]) + ".json"
 
     with open(volume_json_path, "w", encoding = "utf-8") as outfile:
         outfile.write('{\n')
@@ -38,24 +30,78 @@ def build_volume_manifest(volume_id, volume_title, volume_geography, image_detai
         outfile.write("\"@type\": \"sc:Manifest\",\n")
         outfile.write("\"@id\": \"")
         write_server(outfile, manifest_server, default_server)
-        outfile.write("manifest/" + str(volume_id) + ".json\",\n")
-        outfile.write("\"label\": \"" + volume_title + "\",\n")
-        #add description
+        outfile.write("manifest/" + volume_info["identifier"] + ".json\",\n")
+        outfile.write("\"label\": \"" + volume_info["title"] + "\",\n")
+        outfile.write("\"description\": \"" + volume_info["description"][0].replace("\"", "\\\"").replace("  ", ' ') + "\",\n")
+
+        #add metadata? see http://api.bl.uk/metadata/iiif/ark:/81055/vdc_00000004216E/manifest.json
+        outfile.write("\"metadata\": [\n")
+        outfile.write("{\n")
+        outfile.write("\"label\": \"Title\",\n")
+        outfile.write("\"value\": \"" + volume_info["title"] + "\"\n")
+        outfile.write("},\n")
+        outfile.write("{\n")
+        outfile.write("\"label\": \"Creator\",\n")
+        outfile.write("\"value\": \"" + volume_info["creator"][0].replace("  ", ' ') + "\"\n")
+        outfile.write("},\n")
+        vol_subject = ''
+        for subject in volume_info["subject"]:
+            if len(vol_subject) > 0:
+                vol_subject += '; '
+            vol_subject += subject
+        outfile.write("{\n")
+        outfile.write("\"label\": \"Subject\",\n")
+        outfile.write("\"value\": \"" + vol_subject + "\"\n")
+        outfile.write("},\n")
+        outfile.write("{\n")
+        outfile.write("\"label\": \"Digitized by\",\n")
+        outfile.write("\"value\": \"" + volume_info["publisher"][0] + "\"\n")
+        outfile.write("},\n")
+        outfile.write("{\n")
+        outfile.write("\"label\": \"Identifier\",\n")
+        outfile.write("\"value\": \"" + volume_info["identifier"] + "\"\n")
+        outfile.write("},\n")
+        if volume_info["date"] != None:
+            outfile.write("{\n")
+            outfile.write("\"label\": \"Date\",\n")
+            outfile.write("\"value\": \"" + volume_info["date"][0] + "\"\n")
+            outfile.write("},\n")
+        vol_lang = ''
+        for language in volume_info["language"]:
+            if len(vol_lang) > 0:
+                vol_lang += '; '
+            if language == "spa":
+                vol_lang += "Spanish"
+            elif language == "por":
+                vol_lang += "Portuguese"
+            elif language == "eng":
+                vol_lang += "English"
+            elif language == "lat":
+                vol_lang += "Latin"
+            elif language == "fre":
+                vol_lang += "French"
+        outfile.write("{\n")
+        outfile.write("\"label\": \"Language\",\n")
+        outfile.write("\"value\": \"" + vol_lang + "\"\n")
+        outfile.write("}\n")
+        outfile.write("],\n")
+
+
         outfile.write("\"attribution\": \"Slave Societies Digital Archive\",\n")
         outfile.write("\"logo\": \"")
-        write_server(outfile, manifest_server, default_server)
-        outfile.write("ssda_logo.jpg\",\n")
+        write_server(outfile, image_server, default_server)
+        outfile.write("iiif/3/ssda_logo_horizontal.jpg/full/max/0/default.jpg\",\n")
 
         outfile.write("\"sequences\": [\n")
         outfile.write("{\n")
         outfile.write("\"@type\": \"sc:Sequence\",\n")
         outfile.write("\"@id\": \"")
         write_server(outfile, manifest_server, default_server)
-        outfile.write("sequence/" + str(volume_id) + ".json\",\n")
+        outfile.write("sequence/" + str(volume_info["identifier"]) + ".json\",\n")
         outfile.write("\"canvases\": [\n")
 
         first_image = True
-        for image in image_details:
+        for image in volume_info["images"]:
             if not first_image:
                 outfile.write(",\n")
             else:
@@ -65,33 +111,37 @@ def build_volume_manifest(volume_id, volume_title, volume_geography, image_detai
             outfile.write("\"@type\": \"sc:Canvas\",\n")
             outfile.write("\"@id\": \"")
             write_server(outfile, manifest_server, default_server)
-            canvas_id = str(volume_id) + '-' + str(image["file_name"])
+            image_number = image["file_name"] - 1000
+            image_id = "0" * (4 - len(str(image_number))) + str(image_number)
+            canvas_id = str(volume_info["identifier"]) + '-' + image_id
             outfile.write("canvas/" + canvas_id + ".json\",\n")
-            outfile.write("\"label\": \"" + str(image["file_name"] - 1000) + "\",\n")
+            outfile.write("\"label\": \"" + str(image_number) + "\",\n")
             outfile.write("\"width\": " + str(image["width"]) + ",\n")
             outfile.write("\"height\": " + str(image["height"]) + ",\n")
             outfile.write("\"images\": [\n")
             outfile.write("{\n")
             outfile.write("\"@type\": \"oa:Annotation\",\n")
-            #add annotation id
+            outfile.write("\"@id\": \"")
+            write_server(outfile, manifest_server, default_server)
+            outfile.write("annotation/" + str(canvas_id) + ".json\",\n")
             outfile.write("\"motivation\": \"sc:painting\",\n")
             outfile.write("\"on\": \"")
             write_server(outfile, manifest_server, default_server)
             outfile.write("canvas/" + canvas_id + ".json\",\n")
             outfile.write("\"resource\": {\n")
             outfile.write("\"@type\": \"dctypes:Image\",\n")
-            #add resource format
+            outfile.write("\"format\": \"image/jpg\",\n")
             outfile.write("\"@id\": \"")
             write_server(outfile, image_server, default_server)
-            outfile.write(volume_geography["country"].replace(' ', '_') + "%2F" + volume_geography["state"].replace(' ', '_') + "%2F" + volume_geography["city"].replace(' ', '_') + "%2F" + volume_geography["institution"].replace(' ', '_') + "%2F" + str(volume_id) + "%2F" + image["extension"].upper() + "%2F" + str(image["file_name"]) + '.' + image["extension"] + "/full/" + str(image["width"]) + ",/0/default.jpg\",\n")
+            outfile.write("iiif/3/" + canvas_id + ".jpg/full/max/0/default.jpg\",\n")
             outfile.write("\"width\": " + str(image["width"]) + ",\n")
             outfile.write("\"height\": " + str(image["height"]) + ",\n")
             outfile.write("\"service\": {\n")
             outfile.write("\"@id\": \"")
             write_server(outfile, image_server, default_server)
-            outfile.write(volume_geography["country"].replace(' ', '_') + "%2F" + volume_geography["state"].replace(' ', '_') + "%2F" + volume_geography["city"].replace(' ', '_') + "%2F" + volume_geography["institution"].replace(' ', '_') + "%2F" + str(volume_id) + "%2F" + image["extension"].upper() + "%2F" + str(image["file_name"]) + '.' + image["extension"] + "\",\n")
-            outfile.write("\"@context\": \"http://iiif.io/api/image/2/context.json\",\n")
-            outfile.write("\"profile\": \"http://iiif.io/api/image/2/level2.json\"\n")
+            outfile.write( "iiif/3/" + canvas_id + ".jpg\",\n")
+            outfile.write("\"@context\": \"http://iiif.io/api/image/3/context.json\",\n")
+            outfile.write("\"profile\": \"http://iiif.io/api/image/3/level2.json\"\n")
             outfile.write("}\n")
             outfile.write("}\n")
             outfile.write("}\n")

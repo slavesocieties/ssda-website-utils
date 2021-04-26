@@ -4,6 +4,7 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"build_volume_manifest": "manifest_generation.ipynb",
          "write_server": "manifest_generation.ipynb",
+         "copy_jpgs": "s3_scrape.ipynb",
          "build_volume_records": "s3_scrape.ipynb",
          "scrape_bucket": "s3_scrape.ipynb",
          "ssda_volume_xml_to_dict": "s3_scrape.ipynb"}
