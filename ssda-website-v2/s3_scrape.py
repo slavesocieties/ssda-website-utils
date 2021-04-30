@@ -22,11 +22,15 @@ def copy_jpgs(json_path, source_bucket, target_bucket):
 
     for volume in data["volumes"]:
         for image in volume["images"]:
-            copy_source = {"Bucket": source_bucket, "Key": volume["s3_path"] + "/JPG/" + str(image["file_name"]) + ".JPG"}
+            #copy_source = {"Bucket": source_bucket, "Key": volume["s3_path"] + "/JPG/" + str(image["file_name"]) + ".JPG"}
+            s3_client.download_file(source_bucket, volume["s3_path"] + "/JPG/" + str(image["file_name"]) + ".JPG", "temp.jpg")
             image_number = str(image["file_name"] - 1000)
             padded_number = '0' * (4 - len(image_number)) + image_number
-            s3_client.copy(copy_source, target_bucket, str(volume["identifier"]) + '-' + padded_number + ".jpg", ExtraArgs={'ContentType': "image/jpeg", 'Metadata': {"x-amz-meta-width": str(image["width"]), "x-amz-meta-height": str(image["height"])}})
+            #s3_client.copy(copy_source, target_bucket, str(volume["identifier"]) + '-' + padded_number + ".jpg", ExtraArgs={'ContentType': "image/jpeg", 'Metadata': {"x-amz-meta-width": str(image["width"]), "x-amz-meta-height": str(image["height"])}})
+            s3_client.upload_file("temp.jpg", target_bucket, str(volume["identifier"]) + '-' + padded_number + ".jpg", ExtraArgs={'ContentType': "image/jpeg", 'Metadata': {"width": str(image["width"]), "height": str(image["height"])}})
             images += 1
+
+    os.remove("temp.jpg")
 
     return str(images) + " images copied from " + source_bucket + " to " + target_bucket
 

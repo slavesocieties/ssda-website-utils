@@ -1,0 +1,2446 @@
+{
+"@context": "http://iiif.io/api/presentation/2/context.json",
+"@type": "sc:Manifest",
+"@id": "https://ssda-iiif.s3.amazonaws.com/manifest/235536.json",
+"label": "Multi-Source Index",
+"description": "Box 15 - Index contains an index of marriages and abridged marriage and baptismal records originally created in Florida during the eighteenth and nineteenth centuries. There are four parts. The first part is an index of marriages presumably between Minorcans. Each marriage is listed twice: once by the first letter of the bride's surname, and once by the first letter of the groom's surname. The entries are then placed in chronological order according to the date of the marriage. The index covers all of the marriages from Box 14 - Golden Book of the Minorcans, and partially from Box 18 - Marriages and Box 27 - Marriages. The second part contains abridged marriage entries (COMPLETE THIS PART)  The third part contains abridged entries from baptismal records contained in the fifth book of white baptisms (Box 33) and ranges from 1839-1851. Each abridged entry provides the name of the individual being baptised, the date of the baptism, and the associated entry number. The fourth part contains a single marriage entry from 1854.",
+"metadata": [
+{
+"label": "Title",
+"value": "Multi-Source Index"
+},
+{
+"label": "Creator",
+"value": "Digitization of the Archives of the Diocese of St. Augustine (DADS)"
+},
+{
+"label": "Subject",
+"value": "Baptisms; Marriages; Spanish Florida; Early Modern"
+},
+{
+"label": "Digitized by",
+"value": "Slave Societies Digital Archive"
+},
+{
+"label": "Identifier",
+"value": "235536"
+},
+{
+"label": "Language",
+"value": "Spanish; English"
+}
+],
+"attribution": "Slave Societies Digital Archive",
+"logo": "https://images.slavesocieties.org/iiif/3/ssda_logo_horizontal.jpg/full/max/0/default.jpg",
+"sequences": [
+{
+"@type": "sc:Sequence",
+"@id": "https://ssda-iiif.s3.amazonaws.com/sequence/235536.json",
+"canvases": [
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0001.json",
+"label": "1",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0001.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0001.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0001.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0001.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0002.json",
+"label": "2",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0002.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0002.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0002.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0002.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0003.json",
+"label": "3",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0003.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0003.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0003.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0003.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0004.json",
+"label": "4",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0004.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0004.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0004.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0004.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0005.json",
+"label": "5",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0005.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0005.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0005.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0005.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0006.json",
+"label": "6",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0006.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0006.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0006.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0006.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0007.json",
+"label": "7",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0007.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0007.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0007.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0007.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0008.json",
+"label": "8",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0008.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0008.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0008.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0008.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0009.json",
+"label": "9",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0009.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0009.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0009.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0009.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0010.json",
+"label": "10",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0010.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0010.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0010.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0010.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0011.json",
+"label": "11",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0011.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0011.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0011.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0011.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0012.json",
+"label": "12",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0012.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0012.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0012.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0012.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0013.json",
+"label": "13",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0013.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0013.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0013.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0013.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0014.json",
+"label": "14",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0014.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0014.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0014.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0014.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0015.json",
+"label": "15",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0015.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0015.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0015.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0015.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0016.json",
+"label": "16",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0016.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0016.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0016.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0016.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0017.json",
+"label": "17",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0017.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0017.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0017.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0017.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0018.json",
+"label": "18",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0018.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0018.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0018.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0018.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0019.json",
+"label": "19",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0019.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0019.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0019.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0019.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0020.json",
+"label": "20",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0020.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0020.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0020.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0020.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0021.json",
+"label": "21",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0021.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0021.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0021.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0021.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0022.json",
+"label": "22",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0022.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0022.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0022.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0022.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0023.json",
+"label": "23",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0023.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0023.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0023.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0023.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0024.json",
+"label": "24",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0024.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0024.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0024.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0024.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0025.json",
+"label": "25",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0025.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0025.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0025.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0025.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0026.json",
+"label": "26",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0026.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0026.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0026.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0026.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0027.json",
+"label": "27",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0027.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0027.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0027.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0027.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0028.json",
+"label": "28",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0028.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0028.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0028.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0028.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0029.json",
+"label": "29",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0029.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0029.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0029.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0029.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0030.json",
+"label": "30",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0030.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0030.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0030.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0030.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0031.json",
+"label": "31",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0031.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0031.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0031.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0031.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0032.json",
+"label": "32",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0032.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0032.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0032.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0032.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0033.json",
+"label": "33",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0033.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0033.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0033.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0033.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0034.json",
+"label": "34",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0034.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0034.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0034.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0034.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0035.json",
+"label": "35",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0035.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0035.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0035.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0035.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0036.json",
+"label": "36",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0036.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0036.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0036.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0036.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0037.json",
+"label": "37",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0037.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0037.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0037.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0037.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0038.json",
+"label": "38",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0038.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0038.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0038.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0038.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0039.json",
+"label": "39",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0039.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0039.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0039.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0039.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0040.json",
+"label": "40",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0040.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0040.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0040.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0040.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0041.json",
+"label": "41",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0041.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0041.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0041.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0041.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0042.json",
+"label": "42",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0042.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0042.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0042.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0042.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0043.json",
+"label": "43",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0043.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0043.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0043.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0043.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0044.json",
+"label": "44",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0044.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0044.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0044.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0044.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0045.json",
+"label": "45",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0045.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0045.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0045.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0045.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0046.json",
+"label": "46",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0046.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0046.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0046.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0046.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0047.json",
+"label": "47",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0047.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0047.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0047.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0047.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0048.json",
+"label": "48",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0048.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0048.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0048.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0048.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0049.json",
+"label": "49",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0049.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0049.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0049.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0049.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0050.json",
+"label": "50",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0050.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0050.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0050.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0050.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0051.json",
+"label": "51",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0051.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0051.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0051.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0051.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0052.json",
+"label": "52",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0052.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0052.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0052.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0052.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0053.json",
+"label": "53",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0053.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0053.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0053.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0053.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0054.json",
+"label": "54",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0054.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0054.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0054.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0054.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0055.json",
+"label": "55",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0055.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0055.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0055.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0055.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0056.json",
+"label": "56",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0056.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0056.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0056.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0056.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0057.json",
+"label": "57",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0057.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0057.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0057.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0057.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0058.json",
+"label": "58",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0058.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0058.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0058.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0058.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0059.json",
+"label": "59",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0059.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0059.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0059.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0059.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0060.json",
+"label": "60",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0060.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0060.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0060.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0060.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0061.json",
+"label": "61",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0061.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0061.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0061.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0061.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0062.json",
+"label": "62",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0062.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0062.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0062.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0062.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0063.json",
+"label": "63",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0063.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0063.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0063.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0063.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0064.json",
+"label": "64",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0064.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0064.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0064.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0064.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0065.json",
+"label": "65",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0065.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0065.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0065.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0065.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0066.json",
+"label": "66",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0066.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0066.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0066.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0066.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0067.json",
+"label": "67",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0067.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0067.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0067.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0067.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0068.json",
+"label": "68",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0068.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0068.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0068.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0068.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0069.json",
+"label": "69",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0069.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0069.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0069.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0069.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0070.json",
+"label": "70",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0070.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0070.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0070.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0070.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0071.json",
+"label": "71",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0071.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0071.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0071.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0071.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0072.json",
+"label": "72",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0072.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0072.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0072.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0072.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0073.json",
+"label": "73",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0073.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0073.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0073.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0073.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0074.json",
+"label": "74",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0074.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0074.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0074.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0074.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0075.json",
+"label": "75",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0075.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0075.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0075.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0075.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0076.json",
+"label": "76",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0076.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0076.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0076.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0076.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0077.json",
+"label": "77",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0077.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0077.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0077.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0077.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0078.json",
+"label": "78",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0078.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0078.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0078.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0078.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0079.json",
+"label": "79",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0079.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0079.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0079.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0079.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0080.json",
+"label": "80",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0080.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0080.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0080.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0080.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0081.json",
+"label": "81",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0081.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0081.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0081.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0081.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0082.json",
+"label": "82",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0082.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0082.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0082.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0082.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0083.json",
+"label": "83",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0083.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0083.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0083.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0083.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0084.json",
+"label": "84",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0084.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0084.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0084.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0084.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0085.json",
+"label": "85",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0085.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0085.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0085.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0085.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0086.json",
+"label": "86",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0086.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0086.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0086.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0086.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0087.json",
+"label": "87",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0087.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0087.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0087.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0087.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0088.json",
+"label": "88",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0088.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0088.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0088.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0088.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+},
+{
+"@type": "sc:Canvas",
+"@id": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0089.json",
+"label": "89",
+"width": 2736,
+"height": 3648,
+"images": [
+{
+"@type": "oa:Annotation",
+"@id": "https://ssda-iiif.s3.amazonaws.com/annotation/235536-0089.json",
+"motivation": "sc:painting",
+"on": "https://ssda-iiif.s3.amazonaws.com/canvas/235536-0089.json",
+"resource": {
+"@type": "dctypes:Image",
+"format": "image/jpg",
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0089.jpg/full/max/0/default.jpg",
+"width": 2736,
+"height": 3648,
+"service": {
+"@id": "https://images.slavesocieties.org/iiif/3/235536-0089.jpg",
+"@context": "http://iiif.io/api/image/3/context.json",
+"profile": "http://iiif.io/api/image/3/level2.json"
+}
+}
+}
+]
+}
+]
+}
+]
+}
